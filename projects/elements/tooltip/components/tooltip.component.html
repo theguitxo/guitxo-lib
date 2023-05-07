@@ -1,0 +1,12 @@
+<div
+  *ngIf="show"
+  #tooltipContainer
+  class="guitxo-tooltip__container"
+  [ngClass]="customClass"
+  [style.backgroundColor]="bgcolor"
+  [style.color]="fgcolor"
+  [style.borderColor]="bgcolor"
+  @fadeInOut
+  (@fadeInOut.done)="animationDone()">
+  {{ message }}
+</div>

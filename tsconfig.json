@@ -5,6 +5,16 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@guitxo/elements/*": [
+        "projects/elements/*",
+        "projects/elements"
+      ],
+      "@guitxo/elements": [
+        "dist/elements/*",
+        "dist/elements"
+      ]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
