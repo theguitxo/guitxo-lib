@@ -125,7 +125,7 @@
               "-d",
               "."
             ],
-            "outputDir": "dist/storybook/guitxo-lib"
+            "outputDir": "docs/"
           }
         },
         "deploy": {
