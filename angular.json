@@ -127,6 +127,9 @@
             ],
             "outputDir": "dist/storybook/guitxo-lib"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     },
