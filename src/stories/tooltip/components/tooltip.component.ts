@@ -16,4 +16,5 @@ export class TooltipStoriesComponent {
   @Input() guitxoTooltipAlignment!: GuitxoToolTipAlignment;
   @Input() guitxoTooltipBgColor!: string;
   @Input() guitxoTooltipFgColor!: string;
+  @Input() guitxoTooltipDisabled!: boolean;
 }

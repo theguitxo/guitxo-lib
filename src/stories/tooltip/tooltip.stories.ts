@@ -36,6 +36,10 @@ const meta: Meta<TooltipStoriesComponent> = {
     guitxoTooltipFgColor: {
       control: 'color',
       name: 'guitxo-tooltip-foreground-color'
+    },
+    guitxoTooltipDisabled: {
+      control: 'boolean',
+      name: 'guitxo-tooltip-disabled'
     }
   },
   args: {
@@ -43,7 +47,8 @@ const meta: Meta<TooltipStoriesComponent> = {
     guitxoTooltipPosition: 'top',
     guitxoTooltipAlignment: 'center',
     guitxoTooltipBgColor: '#566573',
-    guitxoTooltipFgColor: '#FFFFFF'
+    guitxoTooltipFgColor: '#FFFFFF',
+    guitxoTooltipDisabled: false
   },
   decorators: [
     moduleMetadata({

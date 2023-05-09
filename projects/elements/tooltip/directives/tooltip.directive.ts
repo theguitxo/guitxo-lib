@@ -12,10 +12,14 @@ import { GuitxoToolTipAlignment, GuitxoToolTipPosition } from "../models/tooltip
 })
 export class GuitxoTooltipDirective {
   @HostListener ('mouseenter') onMouseEnter() {
-    this.mouseEnter();
+    if (!this.tooltipDisabled) {
+      this.mouseEnter();
+    }
   };
   @HostListener ('mouseleave') onMouseLeave () {
-    this.mouseLeave();
+    if (!this.tooltipDisabled) {
+      this.mouseLeave();
+    }
   }
 
   @Input('guitxo-tooltip') tooltipMessage!: string;
@@ -23,6 +27,7 @@ export class GuitxoTooltipDirective {
   @Input('guitxo-tooltip-alignment') tooltipAlignment: GuitxoToolTipAlignment = 'center';
   @Input('guitxo-tooltip-background-color') tooltipBackgroundColor = '#566573';
   @Input('guitxo-tooltip-foreground-color') tooltipForegroundColor = '#FFFFFF';
+  @Input('guitxo-tooltip-disabled') tooltipDisabled = false;
 
   componentRef!: ComponentRef<GuitxoTooltipComponent>;
 

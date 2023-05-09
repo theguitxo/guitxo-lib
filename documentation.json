@@ -21,46 +21,6 @@
     "directives": [],
     "components": [
         {
-            "name": "AppComponent",
-            "id": "component-AppComponent-91d14cc29acf8465532c44e296c024f4b157029246d2ef58c1b8e2618e69457902219092f533bbd97aabf482fdd0b239759090c208f01490a36d450df1a52ac9",
-            "file": "src/app/app.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "guitxo-root",
-            "styleUrls": [
-                "./app.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./app.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'guitxo-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss']\r\n})\r\nexport class AppComponent {}\r\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./app.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "templateData": ""
-        },
-        {
             "name": "ButtonComponent",
             "id": "component-ButtonComponent-a53fd738b978780d39fb5fcc9ae4cfe0088e57a1f6ce674862d57dab9192140bd1c05548a9910db0469a431142886e658ff2e761f15781b2ad430e58d64724d0",
             "file": "src/stories/button.component.ts",
@@ -339,7 +299,7 @@
         },
         {
             "name": "TooltipStoriesComponent",
-            "id": "component-TooltipStoriesComponent-dc0470b12e1158a8574d2a6e7e8d6a13f5c5179d936f83a244b0b45f2944b9aeab64b623a0714b12f91b04e24711429f30e16fe96059cc8ad2fc8182276e55ea",
+            "id": "component-TooltipStoriesComponent-38a562db57395d46c3316551c3c0ae0cb58d6e29ba23708ac7813250743784ee5d3a07b9ba65b0a553d6c56cad26ce4942f616c121f1e416f923f52285800d6b",
             "file": "src/stories/tooltip/components/tooltip.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -383,6 +343,14 @@
                     "decorators": []
                 },
                 {
+                    "name": "guitxoTooltipDisabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
                     "name": "guitxoTooltipFgColor",
                     "deprecated": false,
                     "deprecationMessage": "",
@@ -409,7 +377,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from \"@angular/core\";\r\nimport { GuitxoToolTipAlignment, GuitxoToolTipPosition } from \"../../../../projects/elements/tooltip/models/tooltip.model\";\r\n\r\n\r\n@Component({\r\n  selector: 'tooltip-stories',\r\n  templateUrl: './tooltip.component.html',\r\n  styleUrls: ['./tooltip.component.scss']\r\n})\r\nexport class TooltipStoriesComponent {\r\n  /**\r\n   * Message to show in the tooltip\r\n   */\r\n  @Input() guitxoTooltip!: string;\r\n  @Input() guitxoTooltipPosition!: GuitxoToolTipPosition;\r\n  @Input() guitxoTooltipAlignment!: GuitxoToolTipAlignment;\r\n  @Input() guitxoTooltipBgColor!: string;\r\n  @Input() guitxoTooltipFgColor!: string;\r\n}\r\n",
+            "sourceCode": "import { Component, Input } from \"@angular/core\";\r\nimport { GuitxoToolTipAlignment, GuitxoToolTipPosition } from \"../../../../projects/elements/tooltip/models/tooltip.model\";\r\n\r\n\r\n@Component({\r\n  selector: 'tooltip-stories',\r\n  templateUrl: './tooltip.component.html',\r\n  styleUrls: ['./tooltip.component.scss']\r\n})\r\nexport class TooltipStoriesComponent {\r\n  /**\r\n   * Message to show in the tooltip\r\n   */\r\n  @Input() guitxoTooltip!: string;\r\n  @Input() guitxoTooltipPosition!: GuitxoToolTipPosition;\r\n  @Input() guitxoTooltipAlignment!: GuitxoToolTipAlignment;\r\n  @Input() guitxoTooltipBgColor!: string;\r\n  @Input() guitxoTooltipFgColor!: string;\r\n  @Input() guitxoTooltipDisabled!: boolean;\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -418,55 +386,10 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<div class=\"tooltip-example__container\">\r\n  <div\r\n    class=\"tooltip-example__item\"\r\n    [guitxo-tooltip]=\"guitxoTooltip\"\r\n    [guitxo-tooltip-position]=\"guitxoTooltipPosition\"\r\n    [guitxo-tooltip-alignment]=\"guitxoTooltipAlignment\"\r\n    [guitxo-tooltip-background-color]=\"guitxoTooltipBgColor\"\r\n    [guitxo-tooltip-foreground-color]=\"guitxoTooltipFgColor\">\r\n    Hover me!\r\n  </div>\r\n</div>\r\n"
+            "templateData": "<div class=\"tooltip-example__container\">\r\n  <div\r\n    class=\"tooltip-example__item\"\r\n    [guitxo-tooltip]=\"guitxoTooltip\"\r\n    [guitxo-tooltip-position]=\"guitxoTooltipPosition\"\r\n    [guitxo-tooltip-alignment]=\"guitxoTooltipAlignment\"\r\n    [guitxo-tooltip-background-color]=\"guitxoTooltipBgColor\"\r\n    [guitxo-tooltip-foreground-color]=\"guitxoTooltipFgColor\"\r\n    [guitxo-tooltip-disabled]=\"guitxoTooltipDisabled\">\r\n    Hover me!\r\n  </div>\r\n</div>\r\n"
         }
     ],
-    "modules": [
-        {
-            "name": "AppModule",
-            "id": "module-AppModule-a477d387143d10f81cb75dfb0f9f9e0135c3401fdc080447bd9af5b151e33bcebdc9215e755716c237c48acefc0b541153757329bed2442034af2431e2eb2985",
-            "description": "",
-            "deprecationMessage": "",
-            "deprecated": false,
-            "file": "src/app/app.module.ts",
-            "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
-            "children": [
-                {
-                    "type": "providers",
-                    "elements": []
-                },
-                {
-                    "type": "declarations",
-                    "elements": [
-                        {
-                            "name": "AppComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "imports",
-                    "elements": []
-                },
-                {
-                    "type": "exports",
-                    "elements": []
-                },
-                {
-                    "type": "bootstrap",
-                    "elements": [
-                        {
-                            "name": "AppComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "classes",
-                    "elements": []
-                }
-            ]
-        }
-    ],
+    "modules": [],
     "miscellaneous": {
         "variables": [
             {
@@ -567,7 +490,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TooltipStoriesComponent>",
-                "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args\r\n    }\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip'\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position'\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment'\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color'\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color'\r\n    }\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF'\r\n  },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoTooltipModule,\r\n        BrowserAnimationsModule\r\n      ]\r\n    })\r\n  ]\r\n}"
+                "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args\r\n    }\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip'\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position'\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment'\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color'\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color'\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled'\r\n    }\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false\r\n  },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoTooltipModule,\r\n        BrowserAnimationsModule\r\n      ]\r\n    })\r\n  ]\r\n}"
             },
             {
                 "name": "preview",
@@ -678,7 +601,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<TooltipStoriesComponent>",
-                    "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args\r\n    }\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip'\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position'\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment'\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color'\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color'\r\n    }\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF'\r\n  },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoTooltipModule,\r\n        BrowserAnimationsModule\r\n      ]\r\n    })\r\n  ]\r\n}"
+                    "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args\r\n    }\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip'\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position'\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment'\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color'\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color'\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled'\r\n    }\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false\r\n  },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoTooltipModule,\r\n        BrowserAnimationsModule\r\n      ]\r\n    })\r\n  ]\r\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -869,7 +792,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 5,
         "status": "low",
         "files": [
             {
@@ -878,15 +801,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/app.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "AppComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1042,8 +956,8 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "TooltipStoriesComponent",
-                "coveragePercent": 16,
-                "coverageCount": "1/6",
+                "coveragePercent": 14,
+                "coverageCount": "1/7",
                 "status": "low"
             },
             {
