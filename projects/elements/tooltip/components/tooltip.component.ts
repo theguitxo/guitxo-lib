@@ -81,7 +81,8 @@ export class GuitxoTooltipComponent implements AfterViewInit, OnDestroy, OnInit 
       top = this.info.top - this.tooltipInfo.height - this.arrowGap;
     }
 
-    return top;
+    console.log(window.scrollY);
+    return top + window.scrollY;
   }
 
   leftPosition(): number {
@@ -101,6 +102,6 @@ export class GuitxoTooltipComponent implements AfterViewInit, OnDestroy, OnInit 
       }
     }
 
-    return left;
+    return left + window.scrollX;
   }
 }

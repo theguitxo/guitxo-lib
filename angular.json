@@ -127,9 +127,6 @@
             ],
             "outputDir": "docs/"
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     },

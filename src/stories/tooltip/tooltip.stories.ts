@@ -1,7 +1,7 @@
 import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { TooltipStoriesComponent } from "./components/tooltip.component";
 import { GuitxoTooltipModule } from "@guitxo/elements/tooltip";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 const meta: Meta<TooltipStoriesComponent> = {
   title: 'Tooltip Directive',

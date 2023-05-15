@@ -1,6 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { GuitxoToolTipAlignment, GuitxoToolTipPosition } from "../../../../projects/elements/tooltip/models/tooltip.model";
-
+import { GuitxoToolTipAlignment, GuitxoToolTipPosition } from "@guitxo/elements/tooltip/models/tooltip.model";
 
 @Component({
   selector: 'tooltip-stories',

@@ -4,8 +4,8 @@ import {
   Input, createComponent
 } from "@angular/core";
 import { GuitxoTooltipComponent } from "../components/tooltip.component";
-import { take } from "rxjs";
 import { GuitxoToolTipAlignment, GuitxoToolTipPosition } from "../models/tooltip.model";
+import { take } from "rxjs/operators";
 
 @Directive({
   selector: '[guitxo-tooltip]'
