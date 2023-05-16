@@ -1,10 +1,15 @@
 <div class="guitxo-expandible__container">
   <div class="guitxo-expandible__header">
     <div class="guitxo-expandible__title">
-
+      <ng-content select="[header]"></ng-content>
     </div>
     <div class="guitxo-expandible__switch">
       <span class="icon-plus"></span>
+    </div>
+  </div>
+  <div class="guitxo-expandible__content">
+    <div>
+      <ng-content></ng-content>
     </div>
   </div>
 </div>

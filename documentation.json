@@ -145,6 +145,46 @@
             }
         },
         {
+            "name": "ExpandibleStoriesComponent",
+            "id": "component-ExpandibleStoriesComponent-18e44c13cc98a23109078cf85e4c1bee624d6a4918da762f8d9abfcc45f6984bb78ce5b99b5fe3052de6204ccc785c4b3d6f76afcec01cac700809cce4895814",
+            "file": "src/stories/expandible/components/expandible.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "expandible-stories",
+            "styleUrls": [
+                "./expandible.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./expandible.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from \"@angular/core\";\r\n\r\n@Component({\r\n  selector: 'expandible-stories',\r\n  templateUrl: './expandible.component.html',\r\n  styleUrls: ['./expandible.component.scss']\r\n})\r\nexport class ExpandibleStoriesComponent {}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./expandible.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<guitxo-expandible>\r\n  <div header>\r\n    TITULO\r\n  </div>\r\n  <div>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tortor velit. Nam sit amet leo lacinia, fermentum purus non, laoreet ipsum. Vivamus condimentum risus sed ipsum ornare, at eleifend quam interdum. Aliquam sed turpis quis odio interdum bibendum et eu velit. Aenean elementum quis ex quis bibendum. Nunc luctus iaculis mollis. Etiam ac libero ultricies, pellentesque ex in, vestibulum tellus.\r\n  </div>\r\n  <div>\r\n    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut vel mattis lacus. Aenean sed dui in magna vestibulum condimentum. Integer hendrerit feugiat massa in feugiat. Vestibulum ac tristique ex, eget elementum libero. Nam elementum, ipsum id laoreet pellentesque, arcu nisi maximus massa, at molestie nunc sem sit amet orci. Quisque id vehicula sem. Praesent quis mauris id turpis vulputate ultrices. Cras id convallis lacus. Sed dignissim accumsan tincidunt. Aenean ac imperdiet eros. Pellentesque tincidunt dolor ut dignissim laoreet. Mauris at quam a lacus dictum faucibus. Cras ac sagittis purus, sit amet aliquam erat.\r\n  </div>\r\n  <div>\r\n    Quisque nisl ipsum, molestie id lectus in, iaculis varius nunc. Maecenas lorem libero, dignissim eget faucibus id, sagittis eu felis. Nullam efficitur odio eget metus molestie, a vehicula nisi facilisis. Fusce a tempor felis. Suspendisse sapien velit, vulputate at diam at, sollicitudin lobortis mi. Aliquam nibh lacus, elementum ac est et, aliquam venenatis tellus. In ac felis feugiat, mollis augue vel, finibus ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris rutrum tempor lorem, ac accumsan lorem. Praesent tincidunt pretium tristique. Cras sed diam dapibus, ultrices nunc sed, vehicula lorem. Vestibulum non lectus ut tortor congue fermentum. Nulla convallis lectus eget tellus porta, sit amet sodales mi tempus. Nunc sit amet lorem rhoncus justo feugiat accumsan.\r\n  </div>\r\n  <div>\r\n    In sagittis hendrerit scelerisque. Duis quis fringilla libero, ut pulvinar nulla. Nunc id porta justo, non porta tortor. Etiam id leo neque. Suspendisse sodales euismod eros, sed malesuada quam placerat vitae. Suspendisse cursus rutrum libero nec aliquam. Donec pharetra lectus id velit egestas, in rhoncus eros consequat. Donec sed dapibus lorem, ut hendrerit nibh. Nulla sodales finibus lacus, sed tempor velit tempor a. Nam maximus orci ut sapien sodales, vel mattis dolor malesuada. Nunc vulputate, arcu vitae molestie iaculis, ex metus iaculis mauris, non scelerisque sem tortor a libero. Curabitur facilisis molestie lectus, mattis tincidunt augue varius et. Aenean accumsan quam leo, ac gravida justo commodo et. Praesent laoreet dolor ante, vel finibus leo pellentesque nec. Aliquam blandit gravida est a tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r\n  </div>\r\n  <div>\r\n    Sed tristique maximus odio vel finibus. Suspendisse interdum venenatis mauris, et aliquet ligula pharetra non. Nam porta nisl vel volutpat malesuada. Pellentesque eleifend erat ac mattis tristique. Maecenas posuere dolor sit amet cursus luctus. Ut vel viverra ligula. Phasellus pulvinar lobortis nisl tincidunt congue. Nulla ac ornare turpis, sed venenatis libero. Phasellus non facilisis purus, vel tristique ante. Duis urna turpis, condimentum id massa nec, faucibus rhoncus augue. Nullam interdum purus vel lorem vestibulum, quis pharetra risus fermentum. In massa justo, accumsan sed velit nec, tincidunt posuere urna.\r\n  </div>\r\n</guitxo-expandible>"
+        },
+        {
             "name": "HeaderComponent",
             "id": "component-HeaderComponent-a71f246366d5d3dd2485d220bc2c384ceb3f056eb50faded8ff9e4a6404ca4a28c23117da4b98825de8da482bc2ba3b9abeab416745b32d1a89f68595d2dc939",
             "file": "src/stories/header.component.ts",
@@ -396,7 +436,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/tooltip/tooltip.stories.ts",
+                "file": "src/stories/expandible/expandible.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -406,7 +446,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/expandible/expandible.stories.ts",
+                "file": "src/stories/tooltip/tooltip.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -496,21 +536,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/tooltip/tooltip.stories.ts",
+                "file": "src/stories/expandible/expandible.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<TooltipStoriesComponent>",
-                "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args\r\n    }\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip'\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position'\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment'\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color'\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color'\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled'\r\n    }\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false\r\n  },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoTooltipModule,\r\n        BrowserAnimationsModule\r\n      ]\r\n    })\r\n  ]\r\n}"
+                "type": "Meta<ExpandibleStoriesComponent>",
+                "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({}),\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoExpandibleComponent\r\n      ]\r\n    })\r\n  ]\r\n}"
             },
             {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/expandible/expandible.stories.ts",
+                "file": "src/stories/tooltip/tooltip.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<GuitxoExpandibleComponent>",
-                "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: GuitxoExpandibleComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: GuitxoExpandibleComponent) => ({}),\r\n}"
+                "type": "Meta<TooltipStoriesComponent>",
+                "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args\r\n    }\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip'\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position'\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment'\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color'\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color'\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled'\r\n    }\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false\r\n  },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoTooltipModule,\r\n        BrowserAnimationsModule\r\n      ]\r\n    })\r\n  ]\r\n}"
             },
             {
                 "name": "preview",
@@ -592,8 +632,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<TooltipStoriesComponent>",
-                "file": "src/stories/tooltip/tooltip.stories.ts",
+                "rawtype": "StoryObj<ExpandibleStoriesComponent>",
+                "file": "src/stories/expandible/expandible.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -603,8 +643,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<GuitxoExpandibleComponent>",
-                "file": "src/stories/expandible/expandible.stories.ts",
+                "rawtype": "StoryObj<TooltipStoriesComponent>",
+                "file": "src/stories/tooltip/tooltip.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -613,6 +653,28 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "src/stories/expandible/expandible.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/expandible/expandible.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/expandible/expandible.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ExpandibleStoriesComponent>",
+                    "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({}),\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoExpandibleComponent\r\n      ]\r\n    })\r\n  ]\r\n}"
+                }
+            ],
             "src/stories/tooltip/tooltip.stories.ts": [
                 {
                     "name": "Default",
@@ -633,28 +695,6 @@
                     "deprecationMessage": "",
                     "type": "Meta<TooltipStoriesComponent>",
                     "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args\r\n    }\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip'\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position'\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment'\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color'\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color'\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled'\r\n    }\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false\r\n  },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoTooltipModule,\r\n        BrowserAnimationsModule\r\n      ]\r\n    })\r\n  ]\r\n}"
-                }
-            ],
-            "src/stories/expandible/expandible.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/expandible/expandible.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/expandible/expandible.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<GuitxoExpandibleComponent>",
-                    "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: GuitxoExpandibleComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: GuitxoExpandibleComponent) => ({}),\r\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -828,6 +868,19 @@
                     "kind": 177
                 }
             ],
+            "src/stories/expandible/expandible.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ExpandibleStoriesComponent>",
+                    "file": "src/stories/expandible/expandible.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ],
             "src/stories/tooltip/tooltip.stories.ts": [
                 {
                     "name": "Story",
@@ -835,19 +888,6 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<TooltipStoriesComponent>",
                     "file": "src/stories/tooltip/tooltip.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 177
-                }
-            ],
-            "src/stories/expandible/expandible.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<GuitxoExpandibleComponent>",
-                    "file": "src/stories/expandible/expandible.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -998,6 +1038,15 @@
                 "coveragePercent": 83,
                 "coverageCount": "5/6",
                 "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/expandible/components/expandible.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ExpandibleStoriesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
             },
             {
                 "filePath": "src/stories/expandible/expandible.stories.ts",
