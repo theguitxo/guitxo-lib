@@ -7,7 +7,9 @@
       <span class="icon-plus"></span>
     </div>
   </div>
-  <div class="guitxo-expandible__content">
+  <div
+    [@openClose]="isOpen ? true : false"
+    class="guitxo-expandible__content">
     <div>
       <ng-content></ng-content>
     </div>

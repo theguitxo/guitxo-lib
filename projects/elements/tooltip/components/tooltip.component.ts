@@ -81,7 +81,6 @@ export class GuitxoTooltipComponent implements AfterViewInit, OnDestroy, OnInit 
       top = this.info.top - this.tooltipInfo.height - this.arrowGap;
     }
 
-    console.log(window.scrollY);
     return top + window.scrollY;
   }
 
