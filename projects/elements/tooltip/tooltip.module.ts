@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { GuitxoTooltipDirective } from "./directives/tooltip.directive";
 import { GuitxoTooltipComponent } from "./components/tooltip.component";
-import { BrowserAnimationsModule, provideAnimations } from "@angular/platform-browser/animations";
+import { provideAnimations } from "@angular/platform-browser/animations";
 import { CommonModule } from "@angular/common";
 
 @NgModule({

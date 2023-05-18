@@ -1,6 +1,6 @@
 import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
 import { ExpandibleStoriesComponent } from "./components/expandible.component";
-import { GuitxoExpandibleComponent } from "@guitxo/elements/expandible";
+import { GuitxoExpandibleModule } from "@guitxo/elements/expandible";
 
 const meta: Meta<ExpandibleStoriesComponent> = {
   title: 'Expandible',
@@ -10,7 +10,7 @@ const meta: Meta<ExpandibleStoriesComponent> = {
   decorators: [
     moduleMetadata({
       imports: [
-        GuitxoExpandibleComponent
+        GuitxoExpandibleModule
       ]
     })
   ]

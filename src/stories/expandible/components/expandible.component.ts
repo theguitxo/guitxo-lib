@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { GuitxoExpandibleComponent } from "@guitxo/elements/expandible";
 
 @Component({
   selector: 'expandible-stories',

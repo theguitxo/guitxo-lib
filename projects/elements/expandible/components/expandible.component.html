@@ -3,14 +3,17 @@
     <div class="guitxo-expandible__title">
       <ng-content select="[header]"></ng-content>
     </div>
-    <div class="guitxo-expandible__switch">
+    <div
+      class="guitxo-expandible__switch"
+      (click)="openClosePanel()">
       <span class="icon-plus"></span>
     </div>
   </div>
   <div
-    [@openClose]="isOpen ? true : false"
     class="guitxo-expandible__content">
-    <div>
+    <div
+      #content
+      [@openClose]="{ value: isOpen, params: { height: heightContent }}">
       <ng-content></ng-content>
     </div>
   </div>
