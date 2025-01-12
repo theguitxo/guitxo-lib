@@ -157,7 +157,7 @@
         },
         {
             "name": "ExpandibleStoriesComponent",
-            "id": "component-ExpandibleStoriesComponent-e0b85ab1669db6a93786606669d75746d35881f62e7b7e698866793e0f1feb23f234c29d9ec2c4bdd453e54280f36aed74b2c7000541a2f8cfaa1938ed30f926",
+            "id": "component-ExpandibleStoriesComponent-50013a23e4b38bd06e200c80095cafa0c0b41c2a341b1d811bf22ddfce100730e6fedbe47d140657854f1e034f3aae11ba0ddba8051db96cbdd47cd41fa76f17",
             "file": "src/stories/expandible/components/expandible.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -183,11 +183,16 @@
             "hostBindings": [],
             "hostListeners": [],
             "standalone": false,
-            "imports": [],
+            "imports": [
+                {
+                    "name": "GuitxoExpandibleComponent",
+                    "type": "component"
+                }
+            ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from \"@angular/core\";\r\nimport { GuitxoExpandibleComponent } from \"@guitxo/elements/expandible\";\r\n\r\n@Component({\r\n  selector: 'expandible-stories',\r\n  templateUrl: './expandible.component.html',\r\n  styleUrls: ['./expandible.component.scss']\r\n})\r\nexport class ExpandibleStoriesComponent {}\r\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { GuitxoExpandibleComponent } from '@guitxo/elements/expandible';\r\n\r\n@Component({\r\n  selector: 'expandible-stories',\r\n  templateUrl: './expandible.component.html',\r\n  styleUrls: ['./expandible.component.scss'],\r\n  imports: [GuitxoExpandibleComponent],\r\n})\r\nexport class ExpandibleStoriesComponent {}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -582,7 +587,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ExpandibleStoriesComponent>",
-                "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n    moduleMetadata({\r\n      imports: [GuitxoExpandibleComponent],\r\n    }),\r\n  ],\r\n}"
+                "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n  ],\r\n}"
             },
             {
                 "name": "meta",
@@ -592,7 +597,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TooltipStoriesComponent>",
-                "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip',\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position',\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment',\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color',\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color',\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled',\r\n    },\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false,\r\n  },\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n    moduleMetadata({\r\n      imports: [GuitxoTooltipComponent, GuitxoTooltipDirective],\r\n    }),\r\n  ],\r\n}"
+                "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip',\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position',\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment',\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color',\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color',\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled',\r\n    },\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false,\r\n  },\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n  ],\r\n}"
             },
             {
                 "name": "preview",
@@ -726,7 +731,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ExpandibleStoriesComponent>",
-                    "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n    moduleMetadata({\r\n      imports: [GuitxoExpandibleComponent],\r\n    }),\r\n  ],\r\n}"
+                    "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n  ],\r\n}"
                 }
             ],
             "src/stories/tooltip/tooltip.stories.ts": [
@@ -748,7 +753,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<TooltipStoriesComponent>",
-                    "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip',\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position',\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment',\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color',\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color',\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled',\r\n    },\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false,\r\n  },\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n    moduleMetadata({\r\n      imports: [GuitxoTooltipComponent, GuitxoTooltipDirective],\r\n    }),\r\n  ],\r\n}"
+                    "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip',\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position',\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment',\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color',\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color',\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled',\r\n    },\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false,\r\n  },\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n  ],\r\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
