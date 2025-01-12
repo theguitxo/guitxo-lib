@@ -27,7 +27,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          path: ./dist/pruebas-material/browser
+          path: ./dist/guitxo-build
           retention-days: 0
 
   deploy:
