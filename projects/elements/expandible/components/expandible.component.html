@@ -3,16 +3,13 @@
     <div class="guitxo-expandible__title">
       <ng-content select="[header]"></ng-content>
     </div>
-    <div
-      class="guitxo-expandible__switch"
-      (click)="openClosePanel()">
-    </div>
+    <div class="guitxo-expandible__switch" (click)="openClosePanel()">+</div>
   </div>
-  <div
-    class="guitxo-expandible__content">
+  <div class="guitxo-expandible__content">
     <div
       #content
-      [@openClose]="{ value: isOpen, params: { height: heightContent }}">
+      [@openClose]="{ value: isOpen, params: { height: heightContent } }"
+    >
       <ng-content></ng-content>
     </div>
   </div>

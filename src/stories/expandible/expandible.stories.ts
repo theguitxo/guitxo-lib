@@ -1,19 +1,21 @@
-import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
-import { ExpandibleStoriesComponent } from "./components/expandible.component";
-import { GuitxoExpandibleModule } from "@guitxo/elements/expandible";
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { Meta, StoryObj, applicationConfig } from '@storybook/angular';
+import { ExpandibleStoriesComponent } from './components/expandible.component';
 
 const meta: Meta<ExpandibleStoriesComponent> = {
   title: 'Expandible',
   component: ExpandibleStoriesComponent,
   tags: ['autodocs'],
-  render: (args: ExpandibleStoriesComponent) => ({}),
+  render: (args: ExpandibleStoriesComponent) => ({
+    props: {
+      ...args,
+    },
+  }),
   decorators: [
-    moduleMetadata({
-      imports: [
-        GuitxoExpandibleModule
-      ]
-    })
-  ]
+    applicationConfig({
+      providers: [provideAnimations()],
+    }),
+  ],
 };
 
 export default meta;

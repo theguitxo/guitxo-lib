@@ -1,10 +1,16 @@
-import { Component, Input } from "@angular/core";
-import { GuitxoToolTipAlignment, GuitxoToolTipPosition } from "@guitxo/elements/tooltip/models/tooltip.model";
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { GuitxoTooltipDirective } from '@guitxo/elements/tooltip';
+import {
+  GuitxoToolTipAlignment,
+  GuitxoToolTipPosition,
+} from '@guitxo/elements/tooltip/models/tooltip.model';
 
 @Component({
   selector: 'tooltip-stories',
   templateUrl: './tooltip.component.html',
-  styleUrls: ['./tooltip.component.scss']
+  styleUrls: ['./tooltip.component.scss'],
+  imports: [CommonModule, GuitxoTooltipDirective],
 })
 export class TooltipStoriesComponent {
   /**

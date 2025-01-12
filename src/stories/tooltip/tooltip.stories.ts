@@ -1,6 +1,6 @@
-import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
-import { TooltipStoriesComponent } from "./components/tooltip.component";
-import { GuitxoTooltipModule } from "@guitxo/elements/tooltip";
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { Meta, StoryObj, applicationConfig } from '@storybook/angular';
+import { TooltipStoriesComponent } from './components/tooltip.component';
 
 const meta: Meta<TooltipStoriesComponent> = {
   title: 'Tooltip Directive',
@@ -8,38 +8,38 @@ const meta: Meta<TooltipStoriesComponent> = {
   tags: ['autodocs'],
   render: (args: TooltipStoriesComponent) => ({
     props: {
-      ...args
-    }
+      ...args,
+    },
   }),
   argTypes: {
     guitxoTooltip: {
       control: 'text',
       description: 'Message to show in the tooltip',
-      name: 'guitxo-tooltip'
+      name: 'guitxo-tooltip',
     },
     guitxoTooltipPosition: {
       control: 'radio',
       options: ['top', 'right', 'bottom', 'left'],
       description: 'Position where show the tooltip',
-      name: 'guitxo-tooltip-position'
+      name: 'guitxo-tooltip-position',
     },
     guitxoTooltipAlignment: {
       control: 'radio',
       options: ['start', 'center', 'end'],
-      name: 'guitxo-tooltip-alignment'
+      name: 'guitxo-tooltip-alignment',
     },
     guitxoTooltipBgColor: {
       control: 'color',
-      name: 'guitxo-tooltip-background-color'
+      name: 'guitxo-tooltip-background-color',
     },
     guitxoTooltipFgColor: {
       control: 'color',
-      name: 'guitxo-tooltip-foreground-color'
+      name: 'guitxo-tooltip-foreground-color',
     },
     guitxoTooltipDisabled: {
       control: 'boolean',
-      name: 'guitxo-tooltip-disabled'
-    }
+      name: 'guitxo-tooltip-disabled',
+    },
   },
   args: {
     guitxoTooltip: 'Message for tooltip',
@@ -47,15 +47,13 @@ const meta: Meta<TooltipStoriesComponent> = {
     guitxoTooltipAlignment: 'center',
     guitxoTooltipBgColor: '#566573',
     guitxoTooltipFgColor: '#FFFFFF',
-    guitxoTooltipDisabled: false
+    guitxoTooltipDisabled: false,
   },
   decorators: [
-    moduleMetadata({
-      imports: [
-        GuitxoTooltipModule
-      ]
-    })
-  ]
+    applicationConfig({
+      providers: [provideAnimations()],
+    }),
+  ],
 };
 
 export default meta;

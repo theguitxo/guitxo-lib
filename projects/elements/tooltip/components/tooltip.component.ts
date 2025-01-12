@@ -1,33 +1,49 @@
-import { trigger, style, animate, transition } from '@angular/animations';
+import { animate, style, transition, trigger } from '@angular/animations';
+import { NgClass } from '@angular/common';
 import {
-  AfterViewInit, Component,
-  ElementRef, EventEmitter, Input,
-  OnDestroy, OnInit, Output, Renderer2,
-  ViewChild
-} from "@angular/core";
-import { GuitxoToolTipAlignment, GuitxoToolTipPosition } from '../models/tooltip.model';
+  AfterViewInit,
+  Component,
+  ElementRef,
+  EventEmitter,
+  inject,
+  Input,
+  OnDestroy,
+  OnInit,
+  Output,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
+import {
+  GuitxoToolTipAlignment,
+  GuitxoToolTipPosition,
+} from '../models/tooltip.model';
 
 @Component({
-    selector: 'guitxo-tooltip',
-    templateUrl: 'tooltip.component.html',
-    styleUrls: ['./tooltip.component.scss'],
-    animations: [
-        trigger("fadeInOut", [
-            transition(":enter", [
-                style({ opacity: 0 }),
-                animate('.5s ease-in-out', style({ opacity: 1 }))
-            ]),
-            transition(":leave", [
-                style({ opacity: 1 }),
-                animate('.25s ease-in-out', style({ opacity: 0 }))
-            ])
-        ])
-    ],
-    standalone: false
+  selector: 'guitxo-tooltip',
+  templateUrl: 'tooltip.component.html',
+  styleUrls: ['./tooltip.component.scss'],
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('.5s ease-in-out', style({ opacity: 1 })),
+      ]),
+      transition(':leave', [
+        style({ opacity: 1 }),
+        animate('.25s ease-in-out', style({ opacity: 0 })),
+      ]),
+    ]),
+  ],
+  imports: [NgClass],
 })
-export class GuitxoTooltipComponent implements AfterViewInit, OnDestroy, OnInit {
+export class GuitxoTooltipComponent
+  implements AfterViewInit, OnDestroy, OnInit
+{
+  private readonly renderer!: Renderer2;
+  private readonly element!: ElementRef;
+
   @ViewChild('tooltipContainer') tooltipContainer!: ElementRef;
-  
+
   @Input() message!: string;
   @Input() info!: DOMRect;
   @Input() position!: GuitxoToolTipPosition;
@@ -43,22 +59,34 @@ export class GuitxoTooltipComponent implements AfterViewInit, OnDestroy, OnInit 
 
   arrowGap = 10;
 
-  constructor(
-    private readonly renderer: Renderer2,
-    private readonly element: ElementRef
-  ) {}
+  constructor() {
+    this.renderer = inject(Renderer2);
+    this.element = inject(ElementRef);
+  }
 
   ngOnInit(): void {
     this.customClass = `guitxo-tooltip__container--${this.position}-${this.alignment}`;
   }
 
   ngAfterViewInit(): void {
-    this.tooltipInfo = this.tooltipContainer.nativeElement.getBoundingClientRect();
+    this.tooltipInfo =
+      this.tooltipContainer.nativeElement.getBoundingClientRect();
     const top = this.topPosition();
     const left = this.leftPosition();
-    this.renderer.setStyle(this.tooltipContainer.nativeElement, 'top', `${top}px`);
-    this.renderer.setStyle(this.tooltipContainer.nativeElement, 'left', `${left}px`);
-    this.tooltipContainer.nativeElement.style.setProperty('--backgroundcolor', this.bgcolor);
+    this.renderer.setStyle(
+      this.tooltipContainer.nativeElement,
+      'top',
+      `${top}px`
+    );
+    this.renderer.setStyle(
+      this.tooltipContainer.nativeElement,
+      'left',
+      `${left}px`
+    );
+    this.tooltipContainer.nativeElement.style.setProperty(
+      '--backgroundcolor',
+      this.bgcolor
+    );
   }
 
   ngOnDestroy(): void {
@@ -75,7 +103,7 @@ export class GuitxoTooltipComponent implements AfterViewInit, OnDestroy, OnInit 
     let top = 0;
 
     if (this.position === 'left' || this.position === 'right') {
-      top = (this.info.top + this.info.height / 2) - (this.tooltipInfo.height / 2);
+      top = this.info.top + this.info.height / 2 - this.tooltipInfo.height / 2;
     } else if (this.position === 'bottom') {
       top = this.info.bottom + this.arrowGap;
     } else {
@@ -98,7 +126,8 @@ export class GuitxoTooltipComponent implements AfterViewInit, OnDestroy, OnInit 
       } else if (this.alignment === 'end') {
         left = this.info.right - this.tooltipInfo.width;
       } else {
-        left = (this.info.left + this.info.width / 2) - (this.tooltipInfo.width / 2);
+        left =
+          this.info.left + this.info.width / 2 - this.tooltipInfo.width / 2;
       }
     }
 

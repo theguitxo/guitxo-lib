@@ -11,7 +11,8 @@
             "sourceCode": "export interface User {}\n",
             "properties": [],
             "indexSignatures": [],
-            "methods": []
+            "methods": [],
+            "extends": []
         }
     ],
     "injectables": [],
@@ -37,6 +38,7 @@
             "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
             "templateUrl": [],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "backgroundColor",
@@ -57,17 +59,18 @@
                         {
                             "pos": 786,
                             "end": 799,
-                            "flags": 4227072,
+                            "kind": 327,
+                            "id": 0,
+                            "flags": 16842752,
                             "modifierFlagsCache": 0,
                             "transformFlags": 0,
-                            "kind": 325,
                             "tagName": {
                                 "pos": 787,
                                 "end": 795,
-                                "flags": 4227072,
-                                "modifierFlagsCache": 0,
+                                "kind": 80,
+                                "id": 0,
+                                "flags": 16842752,
                                 "transformFlags": 0,
-                                "kind": 79,
                                 "escapedText": "required"
                             },
                             "comment": ""
@@ -120,6 +123,13 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -132,6 +142,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "accessors": {
                 "classes": {
                     "name": "classes",
@@ -162,6 +173,7 @@
                 "./expandible.component.html"
             ],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
@@ -170,6 +182,8 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -182,6 +196,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "templateData": "<guitxo-expandible>\r\n  <div header>\r\n    TITULO\r\n  </div>\r\n  <div style=\"margin-bottom: .5rem;\">\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tortor velit. Nam sit amet leo lacinia, fermentum purus non, laoreet ipsum. Vivamus condimentum risus sed ipsum ornare, at eleifend quam interdum. Aliquam sed turpis quis odio interdum bibendum et eu velit. Aenean elementum quis ex quis bibendum. Nunc luctus iaculis mollis. Etiam ac libero ultricies, pellentesque ex in, vestibulum tellus.\r\n  </div>\r\n  <div style=\"margin-bottom: .5rem;\">\r\n    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut vel mattis lacus. Aenean sed dui in magna vestibulum condimentum. Integer hendrerit feugiat massa in feugiat. Vestibulum ac tristique ex, eget elementum libero. Nam elementum, ipsum id laoreet pellentesque, arcu nisi maximus massa, at molestie nunc sem sit amet orci. Quisque id vehicula sem. Praesent quis mauris id turpis vulputate ultrices. Cras id convallis lacus. Sed dignissim accumsan tincidunt. Aenean ac imperdiet eros. Pellentesque tincidunt dolor ut dignissim laoreet. Mauris at quam a lacus dictum faucibus. Cras ac sagittis purus, sit amet aliquam erat.\r\n  </div>\r\n  <div style=\"margin-bottom: .5rem;\">\r\n    Quisque nisl ipsum, molestie id lectus in, iaculis varius nunc. Maecenas lorem libero, dignissim eget faucibus id, sagittis eu felis. Nullam efficitur odio eget metus molestie, a vehicula nisi facilisis. Fusce a tempor felis. Suspendisse sapien velit, vulputate at diam at, sollicitudin lobortis mi. Aliquam nibh lacus, elementum ac est et, aliquam venenatis tellus. In ac felis feugiat, mollis augue vel, finibus ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris rutrum tempor lorem, ac accumsan lorem. Praesent tincidunt pretium tristique. Cras sed diam dapibus, ultrices nunc sed, vehicula lorem. Vestibulum non lectus ut tortor congue fermentum. Nulla convallis lectus eget tellus porta, sit amet sodales mi tempus. Nunc sit amet lorem rhoncus justo feugiat accumsan.\r\n  </div>\r\n  <div style=\"margin-bottom: .5rem;\">\r\n    In sagittis hendrerit scelerisque. Duis quis fringilla libero, ut pulvinar nulla. Nunc id porta justo, non porta tortor. Etiam id leo neque. Suspendisse sodales euismod eros, sed malesuada quam placerat vitae. Suspendisse cursus rutrum libero nec aliquam. Donec pharetra lectus id velit egestas, in rhoncus eros consequat. Donec sed dapibus lorem, ut hendrerit nibh. Nulla sodales finibus lacus, sed tempor velit tempor a. Nam maximus orci ut sapien sodales, vel mattis dolor malesuada. Nunc vulputate, arcu vitae molestie iaculis, ex metus iaculis mauris, non scelerisque sem tortor a libero. Curabitur facilisis molestie lectus, mattis tincidunt augue varius et. Aenean accumsan quam leo, ac gravida justo commodo et. Praesent laoreet dolor ante, vel finibus leo pellentesque nec. Aliquam blandit gravida est a tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus.\r\n  </div>\r\n  <div>\r\n    Sed tristique maximus odio vel finibus. Suspendisse interdum venenatis mauris, et aliquet ligula pharetra non. Nam porta nisl vel volutpat malesuada. Pellentesque eleifend erat ac mattis tristique. Maecenas posuere dolor sit amet cursus luctus. Ut vel viverra ligula. Phasellus pulvinar lobortis nisl tincidunt congue. Nulla ac ornare turpis, sed venenatis libero. Phasellus non facilisis purus, vel tristique ante. Duis urna turpis, condimentum id massa nec, faucibus rhoncus augue. Nullam interdum purus vel lorem vestibulum, quis pharetra risus fermentum. In massa justo, accumsan sed velit nec, tincidunt posuere urna.\r\n  </div>\r\n</guitxo-expandible>"
         },
         {
@@ -201,6 +216,7 @@
             "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
             "templateUrl": [],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "user",
@@ -244,6 +260,8 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
@@ -255,11 +273,12 @@
                     "styleUrl": "./header.css"
                 }
             ],
-            "stylesData": ""
+            "stylesData": "",
+            "extends": []
         },
         {
             "name": "PageComponent",
-            "id": "component-PageComponent-f5d2fd9ba0ee70c24f514ef21ebdae50beb2e2f42594802a96cdbeb02a59371897162b6be17fcb45cdc0d237d3e4bee611d1ad1d446a54e0699ba35b48991b87",
+            "id": "component-PageComponent-38e9edacc0328997faa9d96ca21c5cb1b40fc4dc3b33360de7513c6d3e448f5559a542473c984aecf84f501fff23dab70605bd0cfd833fbb5aae60f0ed7c8448",
             "file": "src/stories/page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -271,9 +290,10 @@
                 "./page.css"
             ],
             "styles": [],
-            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a\n          href=\"https://componentdriven.org\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page\n        states without needing to navigate to them in your app. Here are some\n        handy patterns for managing page data in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose\n          such data from the \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock\n          these services out using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a\n          href=\"https://storybook.js.org/tutorials/\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a\n          href=\"https://storybook.js.org/docs\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg\n          width=\"10\"\n          height=\"10\"\n          viewBox=\"0 0 12 12\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
             "templateUrl": [],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [
@@ -283,9 +303,10 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "User | null",
+                    "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 64
+                    "line": 85
                 }
             ],
             "methodsClass": [
@@ -295,7 +316,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 74,
+                    "line": 95,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -305,7 +326,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 70,
+                    "line": 91,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -315,7 +336,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 66,
+                    "line": 87,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -324,10 +345,17 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "HeaderComponent",
+                    "type": "component"
+                }
+            ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport type { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\nimport type { User } from './User';\nimport HeaderComponent from './header.component';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a\n          href=\"https://componentdriven.org\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page\n        states without needing to navigate to them in your app. Here are some\n        handy patterns for managing page data in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose\n          such data from the \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock\n          these services out using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a\n          href=\"https://storybook.js.org/tutorials/\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a\n          href=\"https://storybook.js.org/docs\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg\n          width=\"10\"\n          height=\"10\"\n          viewBox=\"0 0 12 12\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n  imports: [HeaderComponent],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -335,11 +363,12 @@
                     "styleUrl": "./page.css"
                 }
             ],
-            "stylesData": ""
+            "stylesData": "",
+            "extends": []
         },
         {
             "name": "TooltipStoriesComponent",
-            "id": "component-TooltipStoriesComponent-fec42a517f8c151bfff4f600c039e25dfddb98c154c62722f712d880eb69fd0c9cb7d05547a0ab6cfde8de30ddff730e27c6d38e0c38ed5cee9e3e5a22652075",
+            "id": "component-TooltipStoriesComponent-17d55ff85a5f2a36f86c25d779aa447fa2440ea77bba6f1c7415efb68e578013e61031171421d36c305010be764dafa671441bfe94b6f702fabda90380906c55",
             "file": "src/stories/tooltip/components/tooltip.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -355,6 +384,7 @@
                 "./tooltip.component.html"
             ],
             "viewProviders": [],
+            "hostDirectives": [],
             "inputsClass": [
                 {
                     "name": "guitxoTooltip",
@@ -362,7 +392,7 @@
                     "deprecationMessage": "",
                     "rawdescription": "\n\nMessage to show in the tooltip\n",
                     "description": "<p>Message to show in the tooltip</p>\n",
-                    "line": 13,
+                    "line": 19,
                     "type": "string",
                     "decorators": []
                 },
@@ -370,7 +400,7 @@
                     "name": "guitxoTooltipAlignment",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 15,
+                    "line": 21,
                     "type": "GuitxoToolTipAlignment",
                     "decorators": []
                 },
@@ -378,7 +408,7 @@
                     "name": "guitxoTooltipBgColor",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 16,
+                    "line": 22,
                     "type": "string",
                     "decorators": []
                 },
@@ -386,7 +416,7 @@
                     "name": "guitxoTooltipDisabled",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 18,
+                    "line": 24,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -394,7 +424,7 @@
                     "name": "guitxoTooltipFgColor",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 17,
+                    "line": 23,
                     "type": "string",
                     "decorators": []
                 },
@@ -402,7 +432,7 @@
                     "name": "guitxoTooltipPosition",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 14,
+                    "line": 20,
                     "type": "GuitxoToolTipPosition",
                     "decorators": []
                 }
@@ -414,10 +444,21 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "GuitxoTooltipDirective",
+                    "type": "directive"
+                }
+            ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from \"@angular/core\";\r\nimport { GuitxoToolTipAlignment, GuitxoToolTipPosition } from \"@guitxo/elements/tooltip/models/tooltip.model\";\r\n\r\n@Component({\r\n  selector: 'tooltip-stories',\r\n  templateUrl: './tooltip.component.html',\r\n  styleUrls: ['./tooltip.component.scss']\r\n})\r\nexport class TooltipStoriesComponent {\r\n  /**\r\n   * Message to show in the tooltip\r\n   */\r\n  @Input() guitxoTooltip!: string;\r\n  @Input() guitxoTooltipPosition!: GuitxoToolTipPosition;\r\n  @Input() guitxoTooltipAlignment!: GuitxoToolTipAlignment;\r\n  @Input() guitxoTooltipBgColor!: string;\r\n  @Input() guitxoTooltipFgColor!: string;\r\n  @Input() guitxoTooltipDisabled!: boolean;\r\n}\r\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport { Component, Input } from '@angular/core';\r\nimport { GuitxoTooltipDirective } from '@guitxo/elements/tooltip';\r\nimport {\r\n  GuitxoToolTipAlignment,\r\n  GuitxoToolTipPosition,\r\n} from '@guitxo/elements/tooltip/models/tooltip.model';\r\n\r\n@Component({\r\n  selector: 'tooltip-stories',\r\n  templateUrl: './tooltip.component.html',\r\n  styleUrls: ['./tooltip.component.scss'],\r\n  imports: [CommonModule, GuitxoTooltipDirective],\r\n})\r\nexport class TooltipStoriesComponent {\r\n  /**\r\n   * Message to show in the tooltip\r\n   */\r\n  @Input() guitxoTooltip!: string;\r\n  @Input() guitxoTooltipPosition!: GuitxoToolTipPosition;\r\n  @Input() guitxoTooltipAlignment!: GuitxoToolTipAlignment;\r\n  @Input() guitxoTooltipBgColor!: string;\r\n  @Input() guitxoTooltipFgColor!: string;\r\n  @Input() guitxoTooltipDisabled!: boolean;\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -426,12 +467,23 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "templateData": "<div class=\"tooltip-example__container\">\r\n  <div\r\n    class=\"tooltip-example__item\"\r\n    [guitxo-tooltip]=\"guitxoTooltip\"\r\n    [guitxo-tooltip-position]=\"guitxoTooltipPosition\"\r\n    [guitxo-tooltip-alignment]=\"guitxoTooltipAlignment\"\r\n    [guitxo-tooltip-background-color]=\"guitxoTooltipBgColor\"\r\n    [guitxo-tooltip-foreground-color]=\"guitxoTooltipFgColor\"\r\n    [guitxo-tooltip-disabled]=\"guitxoTooltipDisabled\">\r\n    Hover me!\r\n  </div>\r\n</div>\r\n"
         }
     ],
     "modules": [],
     "miscellaneous": {
         "variables": [
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\r\n  providers: [provideAnimations()],\r\n}"
+            },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
@@ -473,16 +525,6 @@
                 "defaultValue": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
             },
             {
-                "name": "LoggedIn",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Page.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = await canvas.getByRole('button', {\n      name: /Log in/i,\n    });\n    await userEvent.click(loginButton);\n  },\n}"
-            },
-            {
                 "name": "LoggedOut",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -510,7 +552,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<Button>",
-                "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  tags: ['autodocs'],\n  render: (args: Button) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  tags: ['autodocs'],\n\n  render: (args) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -540,7 +582,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ExpandibleStoriesComponent>",
-                "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({}),\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoExpandibleModule\r\n      ]\r\n    })\r\n  ]\r\n}"
+                "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n    moduleMetadata({\r\n      imports: [GuitxoExpandibleComponent],\r\n    }),\r\n  ],\r\n}"
             },
             {
                 "name": "meta",
@@ -550,7 +592,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<TooltipStoriesComponent>",
-                "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args\r\n    }\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip'\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position'\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment'\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color'\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color'\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled'\r\n    }\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false\r\n  },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoTooltipModule\r\n      ]\r\n    })\r\n  ]\r\n}"
+                "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip',\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position',\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment',\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color',\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color',\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled',\r\n    },\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false,\r\n  },\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n    moduleMetadata({\r\n      imports: [GuitxoTooltipComponent, GuitxoTooltipDirective],\r\n    }),\r\n  ],\r\n}"
             },
             {
                 "name": "preview",
@@ -560,7 +602,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/,\r\n      },\r\n    },\r\n  },\r\n}"
+                "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/,\r\n      },\r\n    },\r\n  },\r\n\r\n  tags: [\"autodocs\"]\r\n}"
             },
             {
                 "name": "Primary",
@@ -604,7 +646,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 183
             },
             {
                 "name": "Story",
@@ -615,7 +657,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 183
             },
             {
                 "name": "Story",
@@ -626,7 +668,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 183
             },
             {
                 "name": "Story",
@@ -637,7 +679,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 183
             },
             {
                 "name": "Story",
@@ -648,11 +690,23 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 177
+                "kind": 183
             }
         ],
         "enumerations": [],
         "groupedVariables": {
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\r\n  providers: [provideAnimations()],\r\n}"
+                }
+            ],
             "src/stories/expandible/expandible.stories.ts": [
                 {
                     "name": "Default",
@@ -672,7 +726,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ExpandibleStoriesComponent>",
-                    "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({}),\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoExpandibleModule\r\n      ]\r\n    })\r\n  ]\r\n}"
+                    "defaultValue": "{\r\n  title: 'Expandible',\r\n  component: ExpandibleStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ExpandibleStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n    moduleMetadata({\r\n      imports: [GuitxoExpandibleComponent],\r\n    }),\r\n  ],\r\n}"
                 }
             ],
             "src/stories/tooltip/tooltip.stories.ts": [
@@ -694,7 +748,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<TooltipStoriesComponent>",
-                    "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args\r\n    }\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip'\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position'\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment'\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color'\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color'\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled'\r\n    }\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false\r\n  },\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [\r\n        GuitxoTooltipModule\r\n      ]\r\n    })\r\n  ]\r\n}"
+                    "defaultValue": "{\r\n  title: 'Tooltip Directive',\r\n  component: TooltipStoriesComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: TooltipStoriesComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n  argTypes: {\r\n    guitxoTooltip: {\r\n      control: 'text',\r\n      description: 'Message to show in the tooltip',\r\n      name: 'guitxo-tooltip',\r\n    },\r\n    guitxoTooltipPosition: {\r\n      control: 'radio',\r\n      options: ['top', 'right', 'bottom', 'left'],\r\n      description: 'Position where show the tooltip',\r\n      name: 'guitxo-tooltip-position',\r\n    },\r\n    guitxoTooltipAlignment: {\r\n      control: 'radio',\r\n      options: ['start', 'center', 'end'],\r\n      name: 'guitxo-tooltip-alignment',\r\n    },\r\n    guitxoTooltipBgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-background-color',\r\n    },\r\n    guitxoTooltipFgColor: {\r\n      control: 'color',\r\n      name: 'guitxo-tooltip-foreground-color',\r\n    },\r\n    guitxoTooltipDisabled: {\r\n      control: 'boolean',\r\n      name: 'guitxo-tooltip-disabled',\r\n    },\r\n  },\r\n  args: {\r\n    guitxoTooltip: 'Message for tooltip',\r\n    guitxoTooltipPosition: 'top',\r\n    guitxoTooltipAlignment: 'center',\r\n    guitxoTooltipBgColor: '#566573',\r\n    guitxoTooltipFgColor: '#FFFFFF',\r\n    guitxoTooltipDisabled: false,\r\n  },\r\n  decorators: [\r\n    applicationConfig({\r\n      providers: [provideAnimations()],\r\n    }),\r\n    moduleMetadata({\r\n      imports: [GuitxoTooltipComponent, GuitxoTooltipDirective],\r\n    }),\r\n  ],\r\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -716,7 +770,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<Button>",
-                    "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  tags: ['autodocs'],\n  render: (args: Button) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                    "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  tags: ['autodocs'],\n\n  render: (args) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
                 },
                 {
                     "name": "Primary",
@@ -783,16 +837,6 @@
             ],
             "src/stories/Page.stories.ts": [
                 {
-                    "name": "LoggedIn",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Page.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = await canvas.getByRole('button', {\n      name: /Log in/i,\n    });\n    await userEvent.click(loginButton);\n  },\n}"
-                },
-                {
                     "name": "LoggedOut",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -822,7 +866,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/,\r\n      },\r\n    },\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/,\r\n      },\r\n    },\r\n  },\r\n\r\n  tags: [\"autodocs\"]\r\n}"
                 }
             ]
         },
@@ -839,7 +883,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 183
                 }
             ],
             "src/stories/Header.stories.ts": [
@@ -852,7 +896,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 183
                 }
             ],
             "src/stories/Page.stories.ts": [
@@ -865,7 +909,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 183
                 }
             ],
             "src/stories/expandible/expandible.stories.ts": [
@@ -878,7 +922,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 183
                 }
             ],
             "src/stories/tooltip/tooltip.stories.ts": [
@@ -891,14 +935,14 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 177
+                    "kind": 183
                 }
             ]
         }
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 3,
         "status": "low",
         "files": [
             {
@@ -907,6 +951,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -962,6 +1016,16 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/Header.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -992,11 +1056,11 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Page.stories.ts",
-                "type": "variable",
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "type alias",
                 "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "LoggedIn",
+                "linksubtype": "typealias",
+                "name": "Story",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1017,6 +1081,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1069,6 +1143,16 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/expandible/expandible.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/header.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1111,6 +1195,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/tooltip/tooltip.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

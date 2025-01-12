@@ -1,9 +1,9 @@
 {
-  "name": "@guitxo/elements/tooltip",
+  "name": "@guitxo/elements-tooltip",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0"
+    "@angular/common": "^19.0.6",
+    "@angular/core": "^19.0.6"
   },
   "dependencies": {
     "tslib": "^2.3.0"
