@@ -2,24 +2,18 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'guitxo-expandible',
-  templateUrl: './expandible.component.html',
-  styleUrls: ['./expandible.component.scss'],
-  animations: [
-    trigger('openClose', [
-      state(
-        'true', 
-        style({ height: '{{height}}px' }),
-        { params: { height: 0 }}
-      ),
-      state('false', style({ heihgt: '0px' })),
-      transition(
-        'false <=> true',
-        animate('.5s ease-out')
-      )
-    ])
-  ],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'guitxo-expandible',
+    templateUrl: './expandible.component.html',
+    styleUrls: ['./expandible.component.scss'],
+    animations: [
+        trigger('openClose', [
+            state('true', style({ height: '{{height}}px' }), { params: { height: 0 } }),
+            state('false', style({ heihgt: '0px' })),
+            transition('false <=> true', animate('.5s ease-out'))
+        ])
+    ],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 
 export class GuitxoExpandibleComponent implements AfterViewInit {

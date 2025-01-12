@@ -8,7 +8,8 @@ import { GuitxoToolTipAlignment, GuitxoToolTipPosition } from "../models/tooltip
 import { take } from "rxjs/operators";
 
 @Directive({
-  selector: '[guitxo-tooltip]'
+    selector: '[guitxo-tooltip]',
+    standalone: false
 })
 export class GuitxoTooltipDirective {
   @HostListener ('mouseenter') onMouseEnter() {

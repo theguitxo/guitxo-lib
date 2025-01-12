@@ -8,21 +8,22 @@ import {
 import { GuitxoToolTipAlignment, GuitxoToolTipPosition } from '../models/tooltip.model';
 
 @Component({
-  selector: 'guitxo-tooltip',
-  templateUrl: 'tooltip.component.html',
-  styleUrls: ['./tooltip.component.scss'],
-  animations: [
-    trigger("fadeInOut", [
-      transition(":enter", [
-        style({ opacity: 0 }),
-        animate('.5s ease-in-out', style({ opacity: 1 }))
-      ]),
-      transition(":leave", [
-        style({ opacity: 1 }),
-        animate('.25s ease-in-out', style({ opacity: 0 }))
-      ])
-    ])
-  ]
+    selector: 'guitxo-tooltip',
+    templateUrl: 'tooltip.component.html',
+    styleUrls: ['./tooltip.component.scss'],
+    animations: [
+        trigger("fadeInOut", [
+            transition(":enter", [
+                style({ opacity: 0 }),
+                animate('.5s ease-in-out', style({ opacity: 1 }))
+            ]),
+            transition(":leave", [
+                style({ opacity: 1 }),
+                animate('.25s ease-in-out', style({ opacity: 0 }))
+            ])
+        ])
+    ],
+    standalone: false
 })
 export class GuitxoTooltipComponent implements AfterViewInit, OnDestroy, OnInit {
   @ViewChild('tooltipContainer') tooltipContainer!: ElementRef;
