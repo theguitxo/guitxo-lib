@@ -12,6 +12,6 @@
     "../src/app/app.module.ts",
     "../src/app/app.component.ts"
   ],
-  "include": ["../src/**/*", "./preview.ts"],
+  "include": ["../src/**/*", "./preview.ts", "../projects/elements"],
   "files": ["./typings.d.ts"]
 }
